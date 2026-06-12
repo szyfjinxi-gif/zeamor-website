@@ -1,0 +1,834 @@
+/**
+ * ZEAMOR 网站配置文件
+ * 更新时间: 2026-06-04 20:56:22
+ */
+
+const SITE_CONFIG = {
+  "brand": {
+    "name": "ZEAMOR",
+    "email": "zeamor@zeamor.com",
+    "phone": "+86 157 0017 0089",
+    "whatsapp": "+86 157 0017 0089",
+    "foundedYear": 2009,
+    "web3formsKey": "e169682e-ec86-4ce6-a233-10a896037151"
+  },
+  "stats": {
+    "yearsExperience": "20+",
+    "yearsExport": "15+",
+    "happyClients": "1000+"
+  },
+  "featuredProducts": [
+    {
+      "img": "img/products/3D%20embroidery%20baseball%20cap.png",
+      "alt": "3D Embroidery Baseball Cap",
+      "title": {
+        "en": "3D Embroidery Caps",
+        "zh": "3D刺绣帽子",
+        "ja": "3D刺繍キャップ"
+      },
+      "desc": {
+        "en": "High-definition 3D embroidery custom designs",
+        "zh": "高清3D刺绣定制设计22222",
+        "ja": "高精細3D刺繍カスタムデザイン"
+      }
+    },
+    {
+      "img": "img/products/Puff%20Custom%20Trucker%20Hat%20.png",
+      "alt": "Puff Custom Trucker Hat",
+      "title": {
+        "en": "Trucker Hats",
+        "zh": "货车帽系列",
+        "ja": "トラッカーハット"
+      },
+      "desc": {
+        "en": "Custom trucker hats with PU/patch/embroidery",
+        "zh": "PU皮标/贴布/刺绣定制货车帽",
+        "ja": "PUパッチ/刺繍カスタムトラッカーハット"
+      }
+    },
+    {
+      "img": "img/products/New%20Style%20strucktured%20waterproof%205%20panel%20laser%20cut%20hole%20Rope%20Brim%20Golf%20Cap.JPG",
+      "alt": "Waterproof Laser Cut Golf Cap",
+      "title": {
+        "en": "Golf & Sports Caps",
+        "zh": "高尔夫&运动帽",
+        "ja": "ゴルフ＆スポーツキャップ"
+      },
+      "desc": {
+        "en": "Waterproof, breathable, performance headwear",
+        "zh": "防水透气高性能运动帽",
+        "ja": "防水透湿の高性能ヘッドウェア"
+      }
+    },
+    {
+      "img": "img/products/Custom%20Kids%20Cap.png",
+      "alt": "Custom Kids Cap",
+      "title": {
+        "en": "Kids Caps",
+        "zh": "儿童帽系列",
+        "ja": "キッズキャップ"
+      },
+      "desc": {
+        "en": "Fun, colorful custom caps for children",
+        "zh": "活泼多彩的儿童定制帽子",
+        "ja": "カラフルで楽しいキッズカスタムキャップ"
+      }
+    }
+  ],
+  "modelGallery": [
+    {
+      "img": "img/models/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260604103708_693_62.jpg"
+    },
+    {
+      "img": "img/models/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260604103736_694_62.png"
+    },
+    {
+      "img": "img/models/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260604103749_696_62.jpg"
+    },
+    {
+      "img": "img/models/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260604103754_697_62.jpg"
+    },
+    {
+      "img": "img/models/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260604103758_698_62.jpg"
+    },
+    {
+      "img": "img/models/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260604103807_699_62.jpg"
+    },
+    {
+      "img": "img/models/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260604103818_700_62.png"
+    },
+    {
+      "img": "img/models/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260604103821_701_62.jpg"
+    }
+  ],
+  "productCategories": [
+    {
+      "tag": {
+        "en": "3D & Embroidery",
+        "zh": "3D刺绣系列",
+        "ja": "3D & 刺繍"
+      },
+      "title": {
+        "en": "3D Embroidery & Patch Caps",
+        "zh": "3D刺绣与贴布帽子",
+        "ja": "3D刺繍＆パッチキャップ"
+      },
+      "items": [
+        {
+          "img": "img/products/3D%20embroidery%20baseball%20cap.png",
+          "title": {
+            "en": "3D Embroidery Baseball Cap",
+            "zh": "3D刺绣棒球帽",
+            "ja": "3D刺繍ベースボールキャップ"
+          },
+          "desc": {
+            "en": "High-definition 3D embroidery on premium baseball cap",
+            "zh": "高端棒球帽高清3D刺绣工艺22222",
+            "ja": "プレミアムベースボールキャップの高精細3D刺繍"
+          }
+        },
+        {
+          "img": "img/products/3D%20Customize%20Embroidery%20logo%20Applique%20.png",
+          "title": {
+            "en": "3D Embroidery Applique Logo Cap",
+            "zh": "3D贴布绣Logo帽",
+            "ja": "3Dアップリケ刺繍ロゴキャップ"
+          },
+          "desc": {
+            "en": "Custom 3D applique embroidery logo design",
+            "zh": "定制3D贴布绣Logo设计",
+            "ja": "カスタム3Dアップリケ刺繍ロゴデザイン"
+          }
+        },
+        {
+          "img": "img/products/Flat%20embroidery%20cap.png",
+          "title": {
+            "en": "Flat Embroidery Cap",
+            "zh": "平面刺绣帽子",
+            "ja": "フラット刺繍キャップ"
+          },
+          "desc": {
+            "en": "Classic flat embroidery with clean, crisp finish",
+            "zh": "经典平面刺绣，干净利落",
+            "ja": "クラシックなフラット刺繍、クリアな仕上がり"
+          }
+        },
+        {
+          "img": "img/products/Sublimation%20Imprint%20Cap.png",
+          "title": {
+            "en": "Sublimation Imprint Cap",
+            "zh": "热转印印花帽子",
+            "ja": "昇華プリントキャップ"
+          },
+          "desc": {
+            "en": "Full-color sublimation printing, vibrant and durable",
+            "zh": "全彩热转印，色彩鲜艳持久",
+            "ja": "フルカラー昇華プリント、鮮やかで耐久性抜群"
+          }
+        }
+      ]
+    },
+    {
+      "tag": {
+        "en": "Trucker Series",
+        "zh": "货车帽系列",
+        "ja": "トラッカーシリーズ"
+      },
+      "title": {
+        "en": "Custom Trucker Caps",
+        "zh": "定制货车帽",
+        "ja": "カスタムトラッカーキャップ"
+      },
+      "items": [
+        {
+          "img": "img/products/embroidery%20patch%20adjust%20adult%20trucker%20cap.png",
+          "title": {
+            "en": "Embroidery Patch Adjustable Trucker",
+            "zh": "贴布刺绣可调节货车帽",
+            "ja": "刺繍パッチ調整可能トラッカー"
+          },
+          "desc": {
+            "en": "Classic trucker cap with embroidery patch, adjustable fit",
+            "zh": "经典货车帽，贴布刺绣，可调节",
+            "ja": "クラシックトラッカー、刺繍パッチ、調整可能"
+          }
+        },
+        {
+          "img": "img/products/PU%20patch%20custom%20trucker%20cap.png",
+          "title": {
+            "en": "PU Patch Custom Trucker Cap",
+            "zh": "PU皮标定制货车帽",
+            "ja": "PUパッチカスタムトラッカー"
+          },
+          "desc": {
+            "en": "Premium PU leather patch on mesh trucker cap",
+            "zh": "网眼货车帽搭配高端PU皮标",
+            "ja": "プレミアムPUレザーパッチ付きメッシュトラッカー"
+          }
+        },
+        {
+          "img": "img/products/Puff%20Custom%20Trucker%20Hat%20.png",
+          "title": {
+            "en": "Puff Custom Trucker Hat",
+            "zh": "立体刺绣货车帽",
+            "ja": "パフ刺繍トラッカーハット"
+          },
+          "desc": {
+            "en": "3D puff embroidery on classic trucker silhouette",
+            "zh": "经典货车帽3D立体刺绣",
+            "ja": "クラシックトラッカーに3Dパフ刺繍"
+          }
+        },
+        {
+          "img": "img/products/sticker%20black%20mesh%20curved%20brim%20trucker%20cap.png",
+          "title": {
+            "en": "Black Mesh Curved Brim Trucker",
+            "zh": "黑色网眼弯檐货车帽",
+            "ja": "ブラックメッシュカーブブリムトラッカー"
+          },
+          "desc": {
+            "en": "Sleek black mesh trucker with curved brim",
+            "zh": "时尚黑色网眼弯檐货车帽",
+            "ja": "スタイリッシュなブラックメッシュカーブブリムトラッカー"
+          }
+        }
+      ]
+    },
+    {
+      "tag": {
+        "en": "Snapback & Sports",
+        "zh": "后扣帽&运动系列",
+        "ja": "スナップバック＆スポーツ"
+      },
+      "title": {
+        "en": "Snapbacks & Sports Caps",
+        "zh": "后扣帽与运动帽",
+        "ja": "スナップバック＆スポーツキャップ"
+      },
+      "items": [
+        {
+          "img": "img/products/Embroidery%20Patch%20Sew%20on%20snapback%20cap.png",
+          "title": {
+            "en": "Embroidery Patch Sew-On Snapback",
+            "zh": "贴布缝制后扣帽",
+            "ja": "刺繍パッチ縫製スナップバック"
+          },
+          "desc": {
+            "en": "Custom patch sewn onto structured snapback",
+            "zh": "定制贴布缝制在定型后扣帽上",
+            "ja": "カスタムパッチを縫製したストラクチャードスナップバック"
+          }
+        },
+        {
+          "img": "img/products/Structured%20Adjustable%20Sports%20Hat%20Cap.png",
+          "title": {
+            "en": "Structured Adjustable Sports Cap",
+            "zh": "定型可调节运动帽",
+            "ja": "ストラクチャード調整可能スポーツキャップ"
+          },
+          "desc": {
+            "en": "Athletic cap with structured front panels, fully adjustable",
+            "zh": "运动帽，定型前面板，全面可调节",
+            "ja": "前面パネル構造のアスレチックキャップ、フル調整可能"
+          }
+        },
+        {
+          "img": "img/products/Custom%20Hats%20Cap.png",
+          "title": {
+            "en": "Custom Structured Cap",
+            "zh": "定制定型帽子",
+            "ja": "カスタムストラクチャードキャップ"
+          },
+          "desc": {
+            "en": "Fully customizable structured cap for any brand",
+            "zh": "全面定制定型帽子，适合任何品牌",
+            "ja": "あらゆるブランドに対応するフルカスタマイズキャップ"
+          }
+        },
+        {
+          "img": "img/products/Unisex%20outdoor%20casual%20golf%20snapback%20hat.JPG",
+          "title": {
+            "en": "Unisex Outdoor Golf Snapback",
+            "zh": "男女同款户外高尔夫后扣帽",
+            "ja": "ユニセックスアウトドアゴルフスナップバック"
+          },
+          "desc": {
+            "en": "Breathable outdoor casual golf snapback hat",
+            "zh": "透气户外休闲高尔夫后扣帽",
+            "ja": "通気性抜群のアウトドアカジュアルゴルフスナップバック"
+          }
+        }
+      ]
+    },
+    {
+      "tag": {
+        "en": "Golf & Kids",
+        "zh": "高尔夫&儿童系列",
+        "ja": "ゴルフ＆キッズ"
+      },
+      "title": {
+        "en": "Golf Caps & Kids Designs",
+        "zh": "高尔夫帽与儿童设计",
+        "ja": "ゴルフキャップ＆キッズデザイン"
+      },
+      "items": [
+        {
+          "img": "img/products/New%20Style%20strucktured%20waterproof%205%20panel%20laser%20cut%20hole%20Rope%20Brim%20Golf%20Cap.JPG",
+          "title": {
+            "en": "Waterproof Laser Cut Golf Cap",
+            "zh": "防水激光打孔高尔夫帽",
+            "ja": "防水レーザーカットゴルフキャップ"
+          },
+          "desc": {
+            "en": "5-panel waterproof cap with laser-cut ventilation and rope brim",
+            "zh": "5片式防水帽，激光打孔透气，绳带帽檐",
+            "ja": "レーザーカット通気孔付き5パネル防水キャップ、ロープブリム"
+          }
+        },
+        {
+          "img": "img/products/5%20panel%20caps%20for%20kids.png",
+          "title": {
+            "en": "5-Panel Kids Cap",
+            "zh": "5片式儿童帽",
+            "ja": "5パネルキッズキャップ"
+          },
+          "desc": {
+            "en": "Lightweight 5-panel cap designed for kids",
+            "zh": "轻量5片式儿童帽设计",
+            "ja": "子供向け軽量5パネルキャップ"
+          }
+        },
+        {
+          "img": "img/products/Custom%20Kids%20Cap.png",
+          "title": {
+            "en": "Custom Kids Cap",
+            "zh": "定制儿童帽",
+            "ja": "カスタムキッズキャップ"
+          },
+          "desc": {
+            "en": "Fully customizable cap for children, any design",
+            "zh": "儿童全面定制帽，任何设计均可",
+            "ja": "お子様向けフルカスタマイズキャップ、どんなデザインも可能"
+          }
+        },
+        {
+          "img": "img/products/UV%20imprint%20KIds%20Hats.png",
+          "title": {
+            "en": "UV Imprint Kids Hat",
+            "zh": "UV印刷儿童帽",
+            "ja": "UVプリントキッズハット"
+          },
+          "desc": {
+            "en": "UV-printed kids hat with vibrant, long-lasting colors",
+            "zh": "UV印刷儿童帽，色彩鲜艳持久",
+            "ja": "鮮やかで長持ちするUVプリントキッズハット"
+          }
+        }
+      ]
+    },
+    {
+      "tag": {
+        "en": "Straw Hats & Bucket Hats",
+        "zh": "草帽&桶帽系列",
+        "ja": "ストローハット＆バケツハット"
+      },
+      "title": {
+        "en": "Straw Hats & Bucket Hats",
+        "zh": "草帽与桶帽",
+        "ja": "ストローハット＆バケツハット"
+      },
+      "items": [
+        {
+          "img": "img/products/straw%20hat%20famer.png",
+          "title": {
+            "en": "Farmer Straw Hat",
+            "zh": "农夫草帽",
+            "ja": "ファーマーストローハット"
+          },
+          "desc": {
+            "en": "Classic farmer style straw hat, breathable and sun-protective",
+            "zh": "经典农夫款式草帽，透气防晒",
+            "ja": "クラシックなファーマースタイルのストローハット、通気性抜群で日除け"
+          }
+        },
+        {
+          "img": "img/products/mens%20straw%20hat.png",
+          "title": {
+            "en": "Men's Straw Hat",
+            "zh": "男士草帽",
+            "ja": "メンズストローハット"
+          },
+          "desc": {
+            "en": "Stylish men's straw hat for outdoor and casual wear",
+            "zh": "时尚男士草帽，适合户外休闲佩戴",
+            "ja": "屋外やカジュアルウェアに最適なおしゃれなメンズストローハット"
+          }
+        },
+        {
+          "img": "img/products/women%20straw%20hat%20%281%29.png",
+          "title": {
+            "en": "Women's Straw Hat",
+            "zh": "女士草帽",
+            "ja": "ウィメンズストローハット"
+          },
+          "desc": {
+            "en": "Elegant women's straw hat with decorative band",
+            "zh": "优雅女士草帽，配装饰带",
+            "ja": "装飾バンド付きのエレガントなウィメンズストローハット"
+          }
+        },
+        {
+          "img": "img/products/Best%20Designer%20Straw%20Hats%20for%20Women%20%281%29.png",
+          "title": {
+            "en": "Designer Women's Straw Hat",
+            "zh": "设计师女士草帽",
+            "ja": "デザイナーズウィメンズストローハット"
+          },
+          "desc": {
+            "en": "Premium designer straw hat for women, fashion-forward style",
+            "zh": "高端设计师女士草帽，时尚前卫",
+            "ja": "プレミアムデザイナーズストローハット、ファッション最前線のスタイル"
+          }
+        },
+        {
+          "img": "img/products/bucket%20hat%20men.png",
+          "title": {
+            "en": "Men's Bucket Hat",
+            "zh": "男士桶帽",
+            "ja": "メンズバケツハット"
+          },
+          "desc": {
+            "en": "Casual men's bucket hat, versatile and comfortable",
+            "zh": "休闲男士桶帽，百搭舒适",
+            "ja": "カジュアルなメンズバケツハット、多用途で快適"
+          }
+        },
+        {
+          "img": "img/products/bucket%20hats%20for%20men.png",
+          "title": {
+            "en": "Bucket Hats for Men",
+            "zh": "男士桶帽系列",
+            "ja": "メンズバケツハットシリーズ"
+          },
+          "desc": {
+            "en": "Multiple styles of bucket hats designed for men",
+            "zh": "多款男士桶帽设计",
+            "ja": "メンズ向け複数スタイルのバケツハット"
+          }
+        },
+        {
+          "img": "img/products/bucket%20straw%20hat.png",
+          "title": {
+            "en": "Straw Bucket Hat",
+            "zh": "草编桶帽",
+            "ja": "ストローバケツハット"
+          },
+          "desc": {
+            "en": "Straw material bucket hat, natural and breathable",
+            "zh": "草编材质桶帽，天然透气",
+            "ja": "ストロー素材のバケツハット、天然で通気性良好"
+          }
+        },
+        {
+          "img": "img/products/straw%20bucket%20hat.png",
+          "title": {
+            "en": "Straw Bucket Sun Hat",
+            "zh": "草编桶帽防晒帽",
+            "ja": "ストローバケツサンハット"
+          },
+          "desc": {
+            "en": "Wide-brim straw bucket hat for sun protection",
+            "zh": "宽檐草编桶帽，防晒效果好",
+            "ja": "日除けに最適なワイドブリムのストローバケツハット"
+          }
+        },
+        {
+          "img": "img/products/PVC%20patch%20beanie.jpg",
+          "title": {
+            "en": "PVC Patch Beanies",
+            "zh": "PVC贴布针织帽",
+            "ja": "PVCパッチビーニー"
+          },
+          "desc": {
+            "en": "Warm beanie with PVC patch customization",
+            "zh": "保暖针织帽，可定制PVC贴布",
+            "ja": "PVCパッチカスタマイズ可能な暖かいビーニー"
+          }
+        },
+        {
+          "img": "img/products/quick%20drying%20hat.jpg",
+          "title": {
+            "en": "Quick Drying Hat",
+            "zh": "速干帽子",
+            "ja": "速乾ハット"
+          },
+          "desc": {
+            "en": "Quick-drying performance hat for sports and outdoor activities",
+            "zh": "速干性能帽子，适合运动和户外活动",
+            "ja": "スポーツや屋外活動に最適な速乾パフォーマンスハット"
+          }
+        }
+      ]
+    }
+  ],
+  "i18n": {
+    "en": {
+      "nav.home": "Home",
+      "nav.products": "Products",
+      "nav.about": "About Us",
+      "nav.contact": "Contact",
+      "nav.inquire": "Inquire Now",
+      "hero.badge": "20+ Years OEM/ODM Experience",
+      "hero.title1": "Custom Hats & Caps Manufacturer",
+      "hero.title2": "China OEM/ODM Factory",
+      "hero.desc": "Your trusted custom hats manufacturer in China. One-stop OEM/ODM solutions for baseball caps, trucker hats, beanies & socks — from design to global delivery for brands worldwide.",
+      "hero.btn1": "View Products",
+      "hero.btn2": "Get a Quote",
+      "hero.scroll": "Scroll Down",
+      "gallery.tag": "Lifestyle Gallery",
+      "gallery.title": "Wear Your Style",
+      "services.tag": "Our Services",
+      "services.title": "One-Stop OEM/ODM Hat Customization Service",
+      "services.subtitle": "From concept to delivery, we provide comprehensive OEM/ODM hat manufacturing services tailored to your brand needs.",
+      "services.s1.title": "Creative Design",
+      "services.s1.desc": "Our design team provides full creative solutions. From initial concept to final artwork, we bring your vision to life.",
+      "services.s2.title": "Sampling & Production",
+      "services.s2.desc": "After design approval, we create premium samples for your review, then move to efficient mass production.",
+      "services.s3.title": "Global Packaging & Shipping",
+      "services.s3.desc": "Professional packaging solutions and worldwide shipping. We ensure your products arrive safely anywhere in the world.",
+      "services.s4.title": "Sourcing Agent in China",
+      "services.s4.desc": "As your reliable purchasing agent in China, we offer multi-category product sourcing beyond headwear.",
+      "about.tag": "About ZEAMOR",
+      "about.title": "Custom Hat Manufacturer China | OEM/ODM Factory in Hangzhou",
+      "about.text1": "Hangzhou Zezhichuan Imp. & Exp Co., Ltd. (ZEAMOR) is located in Hangzhou, China. We specialize in providing custom hat and cap services for brands, promotional companies, and various events.",
+      "about.text2": "We understand that each brand and event has unique needs. That is why we are committed to delivering flexible, personalized solutions that exceed expectations.",
+      "about.btn": "Learn More About Us",
+      "about.stats.years": "Years Experience",
+      "about.stats.export": "Years Export",
+      "about.stats.clients": "Happy Clients",
+      "products.tag": "Our Products",
+      "products.title": "Custom Baseball Caps, Beanies & Socks Manufacturer",
+      "products.subtitle": "High-quality custom hats, caps, beanies and socks manufactured to your exact specifications at our China factory.",
+      "products.btn": "View All Products",
+      "why.tag": "Why Choose Us",
+      "why.title": "Your Trusted OEM Hat Manufacturing Partner",
+      "why.w1.title": "20+ Years Experience",
+      "why.w1.desc": "Two decades of OEM/ODM expertise serving global brands with proven results.",
+      "why.w2.title": "One-Stop Service",
+      "why.w2.desc": "From design concept to final delivery, we handle every step of the process.",
+      "why.w3.title": "Quality Assurance",
+      "why.w3.desc": "Strict quality control and ethical manufacturing standards in every order.",
+      "why.w4.title": "Competitive Pricing",
+      "why.w4.desc": "Direct manufacturer pricing with no middleman markup. Best value guaranteed.",
+      "why.w5.title": "Fast Turnaround",
+      "why.w5.desc": "Efficient production and reliable shipping to meet your deadlines.",
+      "why.w6.title": "Flexible MOQ",
+      "why.w6.desc": "We accommodate both small batches and large orders with competitive rates.",
+      "cta.title": "Ready to Start Your Custom Project?",
+      "cta.desc": "Contact us today to discuss your requirements and get a free quote.",
+      "cta.btn1": "Contact Us Now",
+      "cta.btn2": "Email Us",
+      "footer.about": "Professional OEM/ODM manufacturer of custom hats, caps, beanies and socks. Serving global brands with quality and reliability since 2009.",
+      "footer.navTitle": "Navigation",
+      "footer.contactTitle": "Contact Info",
+      "footer.address": "502, Building 1, No. 398 Changmu Road, Shangcheng Dist., Hangzhou, China",
+      "footer.followTitle": "Follow Us",
+      "footer.copyright": "Copyright (c) 2009-2024 www.zeamor.com. All rights reserved.",
+      "products.page.title": "Custom Hats & Caps - OEM Manufacturer China",
+      "products.page.subtitle": "High-quality custom headwear, caps and socks manufactured to your exact specifications at our China OEM factory.",
+      "about.page.title": "About ZEAMOR - Custom Hat Manufacturer China",
+      "about.page.subtitle": "Professional custom hats manufacturer China with 20+ years OEM/ODM experience serving global brands.",
+      "about.page.p1": "Hangzhou Zezhichuan Imp. & Exp Co., Ltd. (ZEAMOR) is a professional OEM/ODM manufacturer specializing in custom hats, caps, beanies, and socks. Headquartered in Hangzhou, Zhejiang Province, China, we have been serving global brands for over 20 years with quality craftsmanship and reliable service.",
+      "about.page.p2": "Caps and headwear are our core passion. We offer a complete headwear solution including custom-designed snapbacks and baseball caps, high-quality straw and fabric sun hats, comfortable wool and acrylic knit beanies, functional headwear for sports and outdoor use, and fashionable promotion caps with full customization support (logo, color, packaging).",
+      "about.page.p3": "Every product undergoes rigorous quality control and adheres to ethical production standards. With 15 years of hands-on export experience, we ensure reliable delivery, compliant operations, and competitive pricing. We are committed to providing exceptional service and high-quality products that help our clients businesses grow.",
+      "about.page.sidebar.title": "Company Info",
+      "about.page.location": "Hangzhou, Zhejiang, China",
+      "about.page.years": "Founded 2009",
+      "about.page.cert": "Quality Certified",
+      "about.page.services.brand": "Brand Clients",
+      "about.page.services.brand_desc": "Provide unique, custom hats for your brand to enhance brand image and recognition.",
+      "about.page.services.promo": "Promotional Companies",
+      "about.page.services.promo_desc": "Customize unique and attention-grabbing hats for promotional activities, maximizing campaign impact.",
+      "about.page.services.event": "Event Clients",
+      "about.page.services.event_desc": "Provide exclusive and personalized hats for your events, making them truly memorable.",
+      "contact.page.title": "Contact Custom Hat Manufacturer China",
+      "contact.page.subtitle": "Get in touch for OEM/ODM hat & socks manufacturing inquiries, free quotes, and partnership opportunities.",
+      "contact.form.title": "Send Us a Message",
+      "contact.form.desc": "Fill out the form below and we will get back to you within 24 hours.",
+      "contact.form.name": "Your Name",
+      "contact.form.name_placeholder": "Enter your name",
+      "contact.form.email": "Email Address",
+      "contact.form.email_placeholder": "Enter your email",
+      "contact.form.phone": "Phone / WhatsApp",
+      "contact.form.phone_placeholder": "Enter your phone number",
+      "contact.form.subject": "Subject",
+      "contact.form.subject_placeholder": "What are you looking for?",
+      "contact.form.subject_option1": "Custom Hat Inquiry",
+      "contact.form.subject_option2": "Custom Socks Inquiry",
+      "contact.form.subject_option3": "General Inquiry",
+      "contact.form.subject_option4": "Partnership",
+      "contact.form.message": "Message",
+      "contact.form.message_placeholder": "Tell us about your project, requirements, quantity, etc.",
+      "contact.form.submit": "Send Message",
+      "contact.form.success_title": "Message Sent!",
+      "contact.form.success_desc": "Thank you! We will get back to you within 24 hours.",
+      "contact.info.title": "Contact Information",
+      "contact.info.phone": "Phone",
+      "contact.info.email": "Email",
+      "contact.info.address": "Address",
+      "contact.info.whatsapp": "WhatsApp",
+      "contact.map.placeholder": "Map - Hangzhou, Zhejiang, China"
+    },
+    "zh": {
+      "nav.home": "首页",
+      "nav.products": "产品中心",
+      "nav.about": "关于我们",
+      "nav.contact": "联系我们",
+      "nav.inquire": "立即询价",
+      "hero.badge": "20+年 OEM/ODM 经验",
+      "hero.title1": "帽子 & 袜品定制",
+      "hero.title2": "专业制造商",
+      "hero.desc": "您值得信赖的帽子、棒球帽、针织帽和袜品定制合作伙伴。为全球品牌提供从设计到交付的一站式 OEM/ODM 解决方案。",
+      "hero.btn1": "查看产品",
+      "hero.btn2": "获取报价",
+      "hero.scroll": "向下滚动",
+      "gallery.tag": "场景展示",
+      "gallery.title": "戴上你的风格",
+      "services.tag": "我们的服务",
+      "services.title": "一站式定制解决方案",
+      "services.subtitle": "从概念到交付，我们为您的品牌需求提供全面的 OEM/ODM 定制服务。",
+      "services.s1.title": "创意设计",
+      "services.s1.desc": "我们的设计团队提供全套创意方案。从最初的概念到最终图案，我们将您的愿景变为现实。",
+      "services.s2.title": "打样与生产",
+      "services.s2.desc": "设计确认后，我们制作优质样品供您审阅，然后投入高效批量生产。",
+      "services.s3.title": "全球包装与发货",
+      "services.s3.desc": "专业的包装解决方案和全球发货。确保您的产品安全送达世界各地。",
+      "services.s4.title": "中国采购代理",
+      "services.s4.desc": "作为您可靠的中国采购代理，我们提供帽子之外的多品类产品采购服务。",
+      "about.tag": "关于 ZEAMOR",
+      "about.title": "值得信赖的帽子制造商",
+      "about.text1": "杭州泽之川进出口有限公司（ZEAMOR）位于中国杭州。我们专注于为品牌商、促销品公司和各类活动提供定制帽子服务。",
+      "about.text2": "我们深知每个品牌和活动都有独特需求，因此致力于提供灵活、个性化的解决方案，超越客户期望。",
+      "about.btn": "了解更多",
+      "about.stats.years": "年行业经验",
+      "about.stats.export": "年出口经验",
+      "about.stats.clients": "满意客户",
+      "products.tag": "产品系列",
+      "products.title": "优质定制产品",
+      "products.subtitle": "按照您的规格制造的高品质定制帽子和袜品。",
+      "products.btn": "查看全部产品",
+      "why.tag": "为什么选择我们",
+      "why.title": "您值得信赖的制造伙伴",
+      "why.w1.title": "20+年行业经验",
+      "why.w1.desc": "二十年 OEM/ODM 专业经验，为全球品牌提供可靠服务。",
+      "why.w2.title": "一站式服务",
+      "why.w2.desc": "从设计到交付，我们全程把控每一个环节。",
+      "why.w3.title": "品质保证",
+      "why.w3.desc": "严格的质量控制和合规的生产标准贯穿每一笔订单。",
+      "why.w4.title": "价格竞争力",
+      "why.w4.desc": "厂家直销价格，无中间商加价，最优性价比保障。",
+      "why.w5.title": "快速交付",
+      "why.w5.desc": "高效的生产和可靠的发货，满足您的交货期限。",
+      "why.w6.title": "灵活起订量",
+      "why.w6.desc": "支持小批量和大批量订单，均提供有竞争力的价格。",
+      "cta.title": "准备好开始您的定制项目了吗？",
+      "cta.desc": "立即联系我们，讨论您的需求并获取免费报价。",
+      "cta.btn1": "立即联系我们",
+      "cta.btn2": "发送邮件",
+      "footer.about": "专业 OEM/ODM 定制帽子、针织帽和袜品制造商。自2009年以来，为全球品牌提供优质可靠的产品服务。",
+      "footer.navTitle": "导航",
+      "footer.contactTitle": "联系方式",
+      "footer.address": "中国浙江省杭州市上城区丁兰街道长睦路398号1幢502室",
+      "footer.followTitle": "关注我们",
+      "footer.copyright": "版权所有 (c) 2009-2024 www.zeamor.com",
+      "products.page.title": "产品中心",
+      "products.page.subtitle": "按照您的规格制造的高品质定制帽饰、服装和配饰。",
+      "about.page.title": "关于 ZEAMOR",
+      "about.page.subtitle": "您值得信赖的定制帽饰和袜品制造伙伴。",
+      "about.page.p1": "杭州泽之川进出口有限公司（ZEAMOR）是一家专业的 OEM/ODM 制造商，专注于定制帽子、棒球帽、针织帽和袜品。我们的总部位于中国浙江省杭州市，20多年来一直以精湛的工艺和可靠的服务为全球品牌提供服务。",
+      "about.page.p2": "帽子和头饰是我们的核心与热情所在。我们提供完整的头饰解决方案，包括定制设计的后扣帽和棒球帽、高品质草编和布艺遮阳帽、舒适的羊毛和腈纶针织帽、适合运动和户外使用的功能性头饰，以及支持全面定制的时尚促销帽（Logo、颜色、包装）。",
+      "about.page.p3": "每一件产品都经过严格的质量控制，遵循道德生产标准。凭借15年的实际出口经验，我们确保可靠的交付、合规的运营和有竞争力的价格。我们致力于提供卓越的服务和高质量的产品，帮助客户的业务增长。",
+      "about.page.sidebar.title": "公司信息",
+      "about.page.location": "中国浙江省杭州市",
+      "about.page.years": "成立于 2009 年",
+      "about.page.cert": "质量认证",
+      "about.page.services.brand": "品牌客户",
+      "about.page.services.brand_desc": "为您的品牌提供独特的定制帽子，提升品牌形象和辨识度。",
+      "about.page.services.promo": "促销品公司",
+      "about.page.services.promo_desc": "为促销活动定制独特醒目的帽子，最大化活动影响力。",
+      "about.page.services.event": "活动客户",
+      "about.page.services.event_desc": "为您的活动提供专属个性化帽子，让活动更加难忘。",
+      "contact.page.title": "联系我们",
+      "contact.page.subtitle": "如有询价、报价和合作机会，请随时联系我们。",
+      "contact.form.title": "发送消息",
+      "contact.form.desc": "填写以下表单，我们将在24小时内回复您。",
+      "contact.form.name": "您的姓名",
+      "contact.form.name_placeholder": "请输入您的姓名",
+      "contact.form.email": "电子邮箱",
+      "contact.form.email_placeholder": "请输入您的邮箱",
+      "contact.form.phone": "电话 / WhatsApp",
+      "contact.form.phone_placeholder": "请输入您的电话",
+      "contact.form.subject": "咨询主题",
+      "contact.form.subject_placeholder": "您需要什么帮助？",
+      "contact.form.subject_option1": "帽子定制咨询",
+      "contact.form.subject_option2": "袜子定制咨询",
+      "contact.form.subject_option3": "一般咨询",
+      "contact.form.subject_option4": "合作洽谈",
+      "contact.form.message": "留言内容",
+      "contact.form.message_placeholder": "请描述您的项目、需求、数量等信息",
+      "contact.form.submit": "发送消息",
+      "contact.info.title": "联系信息",
+      "contact.info.phone": "电话",
+      "contact.info.email": "邮箱",
+      "contact.info.address": "地址",
+      "contact.info.whatsapp": "WhatsApp",
+      "contact.map.placeholder": "地图 - 中国浙江省杭州市"
+    },
+    "ja": {
+      "nav.home": "ホーム",
+      "nav.products": "製品",
+      "nav.about": "会社概要",
+      "nav.contact": "お問い合わせ",
+      "nav.inquire": "お見積り",
+      "hero.badge": "20年以上のOEM/ODM実績",
+      "hero.title1": "帽子・ソックスの",
+      "hero.title2": "カスタム製造エキスパート",
+      "hero.desc": "カスタム帽子、キャップ、ビーニー、ソックスの信頼できるパートナー。デザインから納品までのワンストップOEM/ODMソリューション。",
+      "hero.btn1": "製品を見る",
+      "hero.btn2": "見積りを依頼",
+      "hero.scroll": "スクロール",
+      "gallery.tag": "スタイルギャラリー",
+      "gallery.title": "あなたのスタイルを身につけよう",
+      "services.tag": "サービス",
+      "services.title": "ワンストップカスタムソリューション",
+      "services.subtitle": "構想から納品まで、ブランドのニーズに合わせた包括的なOEM/ODMサービスを提供します。",
+      "services.s1.title": "クリエイティブデザイン",
+      "services.s1.desc": "デザインチームが完全なクリエイティブソリューションを提供。初期コンセプトから最終アートワークまで、ビジョンを形にします。",
+      "services.s2.title": "サンプリングと生産",
+      "services.s2.desc": "デザイン承認後、高品質なサンプルを作成し、その後に効率的な量産へと移行します。",
+      "services.s3.title": "グローバル梱包・配送",
+      "services.s3.desc": "プロフェッショナルな梱包ソリューションと世界配送。製品を世界中どこへでも安全にお届けします。",
+      "services.s4.title": "中国調達代行",
+      "services.s4.desc": "信頼できる中国での購買代理店として、帽子以外の多カテゴリ商品の調達も承ります。",
+      "about.tag": "ZEAMORについて",
+      "about.title": "信頼される帽子メーカー",
+      "about.text1": "杭州澤之川輸出入有限公司（ZEAMOR）は中国杭州に拠点を構え、ブランド、販促品会社、各種イベント向けにカスタム帽子サービスを専門に提供しています。",
+      "about.text2": "各ブランドやイベントに固有のニーズがあることを理解し、期待を超える柔軟でパーソナライズされたソリューションをお届けします。",
+      "about.btn": "詳細を見る",
+      "about.stats.years": "年の業界経験",
+      "about.stats.export": "年の輸出経験",
+      "about.stats.clients": "の満足顧客",
+      "products.tag": "製品ラインナップ",
+      "products.title": "高品質カスタム製品",
+      "products.subtitle": "お客様の仕様に合わせて製造された高品質なカスタム帽子とソックス。",
+      "products.btn": "全製品を見る",
+      "why.tag": "選ばれる理由",
+      "why.title": "信頼のものづくりパートナー",
+      "why.w1.title": "20年以上の実績",
+      "why.w1.desc": "20年にわたるOEM/ODM専門知識で、グローバルブランドに信頼されるサービスを提供。",
+      "why.w2.title": "ワンストップサービス",
+      "why.w2.desc": "デザインから納品まで、すべての工程を一貫管理。",
+      "why.w3.title": "品質保証",
+      "why.w3.desc": "厳格な品質管理と倫理的な生産基準をあらゆる注文に適用。",
+      "why.w4.title": "競争力のある価格",
+      "why.w4.desc": "メーカー直販価格で中間マージンなし。最高のコストパフォーマンスを保証。",
+      "why.w5.title": "迅速な納品",
+      "why.w5.desc": "効率的な生産と信頼性の高い配送で納期を厳守。",
+      "why.w6.title": "柔軟な最小ロット",
+      "why.w6.desc": "小ロットから大ロットまで、競争力のある価格で対応。",
+      "cta.title": "カスタムプロジェクトを始めませんか？",
+      "cta.desc": "お気軽にお問い合わせください。ご要望をお聞かせいただければ、無料見積りをご提案します。",
+      "cta.btn1": "今すぐお問い合わせ",
+      "cta.btn2": "メールする",
+      "footer.about": "カスタム帽子、ビーニー、ソックスの専門OEM/ODMメーカー。2009年以来、品質と信頼でグローバルブランドをサポート。",
+      "footer.navTitle": "ナビゲーション",
+      "footer.contactTitle": "お問い合わせ",
+      "footer.address": "中国浙江省杭州市上城区丁蘭街道長睦路398号1棟502室",
+      "footer.followTitle": "フォローする",
+      "footer.copyright": "Copyright (c) 2009-2024 www.zeamor.com",
+      "products.page.title": "製品センター",
+      "products.page.subtitle": "お客様の仕様に合わせた高品質な帽子、アパレル、アクセサリー。",
+      "about.page.title": "ZEAMORについて",
+      "about.page.subtitle": "カスタム帽子とソックス製造の信頼できるパートナー。",
+      "about.page.p1": "杭州澤之川輸出入有限公司（ZEAMOR）は、カスタム帽子、キャップ、ビーニー、ソックスを専門とするOEM/ODMメーカーです。中国浙江省杭州市に本社を構え、20年以上にわたり品質の高いクラフトマンシップと信頼性の高いサービスでグローバルブランドをサポートしてきました。",
+      "about.page.p2": "帽子とヘッドウェアは私たちの核心であり情熱です。カスタムデザインのスナップバックとベースボールキャップ、高品質なストロー・ファブリック製サンハット、快適なウール・アクリル製ニットビーニー、スポーツ・アウトドア用機能性ヘッドウェア、そしてロゴ・カラー・パッケージまで完全カスタマイズ対応のファッションプロモーションキャップを提供しています。",
+      "about.page.p3": "すべての製品は厳格な品質管理を受け、倫理的な生産基準を遵守しています。15年の輸出実績により、信頼性の高い納品、コンプライアンスに準拠した運営、競争力のある価格を保証します。お客様のビジネスの成長を支える優れたサービスと高品質な製品を提供することに全力で取り組んでいます。",
+      "about.page.sidebar.title": "会社情報",
+      "about.page.location": "中国浙江省杭州市",
+      "about.page.years": "2009年設立",
+      "about.page.cert": "品質認証",
+      "about.page.services.brand": "ブランド企業様向け",
+      "about.page.services.brand_desc": "ブランドイメージと認知度を高めるユニークなカスタム帽子を提供します。",
+      "about.page.services.promo": "販促品会社様向け",
+      "about.page.services.promo_desc": "販促活動用にユニークで目を引く帽子をカスタマイズし、キャンペーンの効果を最大化します。",
+      "about.page.services.event": "イベント主催者様向け",
+      "about.page.services.event_desc": "イベント用の特別でパーソナライズされた帽子を提供し、思い出に残るものにします。",
+      "contact.page.title": "お問い合わせ",
+      "contact.page.subtitle": "ご質問、見積り依頼、パートナーシップのご相談はお気軽にどうぞ。",
+      "contact.form.title": "メッセージを送る",
+      "contact.form.desc": "以下のフォームにご記入いただければ、24時間以内にご連絡いたします。",
+      "contact.form.name": "お名前",
+      "contact.form.name_placeholder": "お名前を入力してください",
+      "contact.form.email": "メールアドレス",
+      "contact.form.email_placeholder": "メールアドレスを入力",
+      "contact.form.phone": "電話 / WhatsApp",
+      "contact.form.phone_placeholder": "電話番号を入力",
+      "contact.form.subject": "お問い合わせ件名",
+      "contact.form.subject_placeholder": "どのようなご用件ですか？",
+      "contact.form.subject_option1": "帽子カスタムのご相談",
+      "contact.form.subject_option2": "ソックスカスタムのご相談",
+      "contact.form.subject_option3": "一般お問い合わせ",
+      "contact.form.subject_option4": "パートナーシップ",
+      "contact.form.message": "メッセージ",
+      "contact.form.message_placeholder": "プロジェクト、ご要望、数量などについてお聞かせください",
+      "contact.form.submit": "送信する",
+      "contact.info.title": "連絡先情報",
+      "contact.info.phone": "電話",
+      "contact.info.email": "メール",
+      "contact.info.address": "住所",
+      "contact.info.whatsapp": "WhatsApp",
+      "contact.map.placeholder": "地図 - 中国浙江省杭州市"
+    }
+  }
+};
+

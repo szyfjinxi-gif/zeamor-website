@@ -1,29 +1,67 @@
 /**
  * ZEAMOR Website - Main JavaScript
  * Handles: i18n (EN/ZH/JA), dynamic rendering, mobile menu, scroll effects, contact form
+ * Config: loads js/site.config.json asynchronously
  */
 
 // =====================
-// Config Override from Admin Panel
+// Async Config Loader
 // =====================
-(function applyAdminOverrides() {
+let CONFIG_LOADED = false;
+let CONFIG_PROMISE = null;
+
+async function loadConfig() {
+  try {
+    const resp = await fetch('js/site.config.json?t=' + Date.now());
+    if (!resp.ok) throw new Error('Failed to load site.config.json: ' + resp.status);
+    const data = await resp.json();
+    window.SITE_CONFIG = data;
+
+    // Apply admin overrides from localStorage (for preview)
+    applyAdminOverrides();
+
+    CONFIG_LOADED = true;
+    document.dispatchEvent(new Event('zeamor-config-loaded'));
+    return data;
+  } catch (e) {
+    console.error('[ZEAMOR] Config load error:', e);
+    // Fallback: try loading legacy site.config.js
+    return new Promise((resolve) => {
+      const s = document.createElement('script');
+      s.src = 'js/site.config.js';
+      s.onload = () => {
+        CONFIG_LOADED = true;
+        applyAdminOverrides();
+        document.dispatchEvent(new Event('zeamor-config-loaded'));
+        resolve(window.SITE_CONFIG);
+      };
+      s.onerror = () => {
+        console.error('[ZEAMOR] Failed to load config from both JSON and JS');
+        CONFIG_LOADED = true;
+        document.dispatchEvent(new Event('zeamor-config-loaded'));
+        resolve(null);
+      };
+      document.head.appendChild(s);
+    });
+  }
+}
+
+function applyAdminOverrides() {
   try {
     const saved = localStorage.getItem('zeamor-config');
-    if (saved) {
+    if (saved && window.SITE_CONFIG) {
       const override = JSON.parse(saved);
-      // Deep merge overrides into SITE_CONFIG
       Object.keys(override).forEach(key => {
-        if (typeof override[key] === 'object' && !Array.isArray(override[key]) && typeof SITE_CONFIG[key] === 'object' && !Array.isArray(SITE_CONFIG[key])) {
-          // Deep merge for nested objects (e.g., i18n -> en/zh/ja -> key/values)
-          deepMerge(SITE_CONFIG[key], override[key]);
+        if (typeof override[key] === 'object' && !Array.isArray(override[key]) && typeof window.SITE_CONFIG[key] === 'object' && !Array.isArray(window.SITE_CONFIG[key])) {
+          deepMerge(window.SITE_CONFIG[key], override[key]);
         } else {
-          SITE_CONFIG[key] = override[key];
+          window.SITE_CONFIG[key] = override[key];
         }
       });
       console.log('[ZEAMOR] Applied saved config overrides');
     }
-  } catch(e) { console.error('[ZEAMOR] Config override error:', e); }
-})();
+  } catch (e) { console.error('[ZEAMOR] Config override error:', e); }
+}
 
 function deepMerge(target, source) {
   Object.keys(source).forEach(k => {
@@ -35,13 +73,16 @@ function deepMerge(target, source) {
   });
 }
 
+// Start loading config immediately (not waiting for DOM)
+CONFIG_PROMISE = loadConfig();
+
 // =====================
 // i18n Engine
 // =====================
 let currentLang = localStorage.getItem('zeamor-lang') || 'en';
 
 function t(key) {
-  return (SITE_CONFIG.i18n[currentLang] && SITE_CONFIG.i18n[currentLang][key]) || key;
+  return (window.SITE_CONFIG && window.SITE_CONFIG.i18n && window.SITE_CONFIG.i18n[currentLang] && window.SITE_CONFIG.i18n[currentLang][key]) || key;
 }
 
 function setLang(lang) {
@@ -90,10 +131,10 @@ function toggleLang() {
 // Render featured products on index page
 function renderFeaturedProducts() {
   const container = document.getElementById('featuredProducts');
-  if (!container) return;
+  if (!container || !window.SITE_CONFIG) return;
   const lang = currentLang;
 
-  container.innerHTML = SITE_CONFIG.featuredProducts.map(p => `
+  container.innerHTML = window.SITE_CONFIG.featuredProducts.map(p => `
     <a href="products.html" class="product-card">
       <div class="product-card-img">
         <img src="${p.img}" alt="${p.alt || ''}" loading="lazy">
@@ -109,10 +150,10 @@ function renderFeaturedProducts() {
 // Render full product gallery on products page
 function renderProductGallery() {
   const container = document.getElementById('productGallery');
-  if (!container) return;
+  if (!container || !window.SITE_CONFIG) return;
   const lang = currentLang;
 
-  container.innerHTML = SITE_CONFIG.productCategories.map((cat, i) => `
+  container.innerHTML = window.SITE_CONFIG.productCategories.map((cat, i) => `
     <div class="section-header"${i > 0 ? ' style="margin-top:60px"' : ''}>
       <span class="section-tag">${cat.tag[lang] || cat.tag.en}</span>
       <h2 class="section-title">${cat.title[lang] || cat.title.en}</h2>
@@ -136,9 +177,9 @@ function renderProductGallery() {
 // Render model gallery on index page
 function renderModelGallery() {
   const container = document.getElementById('modelGallery');
-  if (!container) return;
+  if (!container || !window.SITE_CONFIG) return;
 
-  container.innerHTML = SITE_CONFIG.modelGallery.map(p => `
+  container.innerHTML = window.SITE_CONFIG.modelGallery.map(p => `
     <div class="gallery-item">
       <img src="${p.img}" alt="ZEAMOR Lifestyle" loading="lazy">
     </div>
@@ -147,7 +188,8 @@ function renderModelGallery() {
 
 // Inject contact info from config into DOM
 function injectContactInfo() {
-  const cfg = SITE_CONFIG.brand;
+  if (!window.SITE_CONFIG) return;
+  const cfg = window.SITE_CONFIG.brand;
 
   // All mailto links
   document.querySelectorAll('a[href^="mailto:"]').forEach(a => {
@@ -180,7 +222,8 @@ function injectContactInfo() {
 
 // Inject stats from config
 function injectStats() {
-  const stats = SITE_CONFIG.stats;
+  if (!window.SITE_CONFIG) return;
+  const stats = window.SITE_CONFIG.stats;
   document.querySelectorAll('[data-config="stat-years"]').forEach(el => el.textContent = stats.yearsExperience);
   document.querySelectorAll('[data-config="stat-export"]').forEach(el => el.textContent = stats.yearsExport);
   document.querySelectorAll('[data-config="stat-clients"]').forEach(el => el.textContent = stats.happyClients);
@@ -189,8 +232,7 @@ function injectStats() {
 // =====================
 // Scroll Effects
 // =====================
-document.addEventListener('DOMContentLoaded', () => {
-  // Header scroll effect
+function initScrollEffects() {
   const header = document.getElementById('header');
   if (header) {
     window.addEventListener('scroll', () => {
@@ -205,17 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { threshold: 0.15 });
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-  // Init i18n
-  setLang(currentLang);
-
-  // Render dynamic content
-  renderFeaturedProducts();
-  renderProductGallery();
-  renderModelGallery();
-  injectContactInfo();
-  injectStats();
-});
+}
 
 // =====================
 // Mobile Menu
@@ -268,9 +300,39 @@ function checkFormSuccess() {
   }
 }
 
-// Run on page load
-if (document.addEventListener) {
-  document.addEventListener('DOMContentLoaded', checkFormSuccess);
-} else {
-  window.onload = checkFormSuccess;
+// =====================
+// Main Init (waits for config + DOM)
+// =====================
+async function init() {
+  // Wait for config to load (max 5s)
+  if (!CONFIG_LOADED) {
+    await Promise.race([
+      CONFIG_PROMISE,
+      new Promise(r => setTimeout(r, 5000))
+    ]);
+  }
+
+  // Wait for DOM
+  if (document.readyState === 'loading') {
+    await new Promise(r => document.addEventListener('DOMContentLoaded', r, { once: true }));
+  }
+
+  // Init scroll effects
+  initScrollEffects();
+
+  // Init i18n
+  setLang(currentLang);
+
+  // Render dynamic content
+  renderFeaturedProducts();
+  renderProductGallery();
+  renderModelGallery();
+  injectContactInfo();
+  injectStats();
+
+  // Check form success
+  checkFormSuccess();
 }
+
+// Start init
+init();

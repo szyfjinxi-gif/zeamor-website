@@ -1,0 +1,111 @@
+# ================================
+# ZEAMOR CMS Configuration (Decap CMS)
+# Manages js/site.config.json
+# ================================
+
+backend:
+  name: github
+  repo: szyfjinxi-gif/zeamor-website
+  branch: main
+
+publish_mode: editorial_workflow
+
+media_folder: "img/uploads"
+public_folder: "/img/uploads"
+
+collections:
+  - name: "config"
+    label: "Site Content"
+    editor:
+      preview: false
+    files:
+      - label: "Edit Site Content"
+        name: "site-data"
+        file: "js/site.config.json"
+        fields:
+          # ═══ Brand ═══
+          - label: "Brand Information"
+            name: "brand"
+            widget: "object"
+            fields:
+              - { label: "Brand Name", name: "name", widget: "string", default: "ZEAMOR" }
+              - { label: "Email", name: "email", widget: "string", default: "zeamor@zeamor.com" }
+              - { label: "Phone", name: "phone", widget: "string", default: "+86 157 0017 0089" }
+              - { label: "WhatsApp", name: "whatsapp", widget: "string", default: "+86 157 0017 0089" }
+              - { label: "Founded Year", name: "foundedYear", widget: "number", value_type: "int", default: 2009 }
+          # ═══ Stats ═══
+          - label: "Stats"
+            name: "stats"
+            widget: "object"
+            fields:
+              - { label: "Years Experience", name: "yearsExperience", widget: "string", default: "20+" }
+              - { label: "Years Export", name: "yearsExport", widget: "string", default: "15+" }
+              - { label: "Happy Clients", name: "happyClients", widget: "string", default: "1000+" }
+          # ═══ Featured Products (Homepage) ═══
+          - label: "Featured Products (Homepage)"
+            name: "featuredProducts"
+            widget: "list"
+            summary: "{{fields.title.en}}"
+            fields:
+              - { label: "Image", name: "img", widget: "image" }
+              - { label: "Alt Text", name: "alt", widget: "string" }
+              - label: "Title"
+                name: "title"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "Chinese", name: "zh", widget: "string" }
+                  - { label: "Japanese", name: "ja", widget: "string" }
+              - label: "Description"
+                name: "desc"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "text" }
+                  - { label: "Chinese", name: "zh", widget: "text" }
+                  - { label: "Japanese", name: "ja", widget: "text" }
+          # ═══ Product Categories ═══
+          - label: "Product Categories"
+            name: "productCategories"
+            widget: "list"
+            summary: "{{fields.title.en}}"
+            fields:
+              - label: "Category Tag"
+                name: "tag"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "Chinese", name: "zh", widget: "string" }
+                  - { label: "Japanese", name: "ja", widget: "string" }
+              - label: "Category Title"
+                name: "title"
+                widget: "object"
+                fields:
+                  - { label: "English", name: "en", widget: "string" }
+                  - { label: "Chinese", name: "zh", widget: "string" }
+                  - { label: "Japanese", name: "ja", widget: "string" }
+              - label: "Products"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.title.en}}"
+                fields:
+                  - { label: "Product Image", name: "img", widget: "image" }
+                  - label: "Product Title"
+                    name: "title"
+                    widget: "object"
+                    fields:
+                      - { label: "English", name: "en", widget: "string" }
+                      - { label: "Chinese", name: "zh", widget: "string" }
+                      - { label: "Japanese", name: "ja", widget: "string" }
+                  - label: "Product Description"
+                    name: "desc"
+                    widget: "object"
+                    fields:
+                      - { label: "English", name: "en", widget: "text" }
+                      - { label: "Chinese", name: "zh", widget: "text" }
+                      - { label: "Japanese", name: "ja", widget: "text" }
+          # ═══ Model Gallery ═══
+          - label: "Model Gallery (Homepage)"
+            name: "modelGallery"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "img", widget: "image" }

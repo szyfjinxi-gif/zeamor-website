@@ -7,6 +7,10 @@ backend:
   name: github
   repo: szyfjinxi-gif/zeamor-website
   branch: main
+  # ⚠️ base_url: Replace with your Worker URL after deployment
+  # e.g. https://zeamor-oauth.yourname.workers.dev
+  # Leave commented until Worker is deployed + secrets are set
+  # base_url: https://zeamor-oauth.REPLACE_ME.workers.dev
 
 publish_mode: editorial_workflow
 

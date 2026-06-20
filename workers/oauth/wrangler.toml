@@ -1,0 +1,17 @@
+# Cloudflare Worker — Decap CMS GitHub OAuth Provider
+# Deploys to: https://zeamor-oauth.<your-subdomain>.workers.dev
+name = "zeamor-oauth"
+main = "src/index.js"
+compatibility_date = "2025-06-01"
+
+# After first deploy, the Worker URL will be:
+# https://zeamor-oauth.<subdomain>.workers.dev
+# Copy that URL into admin/config.yml as base_url
+
+[vars]
+REDIRECT_URL = "https://www.zeamor.com/admin/"
+
+# IMPORTANT: Set these secrets AFTER deploying the worker:
+# wrangler secret put OAUTH_CLIENT_ID
+# wrangler secret put OAUTH_CLIENT_SECRET
+# wrangler secret put ORIGIN

@@ -12,3 +12,13 @@ Thumbs.db
 # Temporary
 *.log
 *.tmp
+
+# Docs & plans (not part of the website)
+SEO-PROMOTION-PLAN.md
+SEO-PROMOTION-PLAN.pdf
+SEO-PROMOTION-PLAN.gen.html
+DECAP-CMS-OAUTH-GUIDE.md
+
+# Work-in-progress assets
+袜子白底图/
+*.rar

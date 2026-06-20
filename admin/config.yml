@@ -14,16 +14,13 @@ media_folder: "img/uploads"
 public_folder: "/img/uploads"
 
 collections:
-  - name: "config"
+  - name: "site_content"
     label: "Site Content"
-    editor:
-      preview: false
     files:
-      - label: "Edit Site Content"
-        name: "site-data"
+      - label: "Edit All Site Data"
+        name: "site_data"
         file: "js/site.config.json"
         fields:
-          # ═══ Brand ═══
           - label: "Brand Information"
             name: "brand"
             widget: "object"
@@ -32,8 +29,7 @@ collections:
               - { label: "Email", name: "email", widget: "string", default: "zeamor@zeamor.com" }
               - { label: "Phone", name: "phone", widget: "string", default: "+86 157 0017 0089" }
               - { label: "WhatsApp", name: "whatsapp", widget: "string", default: "+86 157 0017 0089" }
-              - { label: "Founded Year", name: "foundedYear", widget: "number", value_type: "int", default: 2009 }
-          # ═══ Stats ═══
+              - { label: "Founded Year", name: "foundedYear", widget: "number", default: 2009 }
           - label: "Stats"
             name: "stats"
             widget: "object"
@@ -41,7 +37,6 @@ collections:
               - { label: "Years Experience", name: "yearsExperience", widget: "string", default: "20+" }
               - { label: "Years Export", name: "yearsExport", widget: "string", default: "15+" }
               - { label: "Happy Clients", name: "happyClients", widget: "string", default: "1000+" }
-          # ═══ Featured Products (Homepage) ═══
           - label: "Featured Products (Homepage)"
             name: "featuredProducts"
             widget: "list"
@@ -63,7 +58,6 @@ collections:
                   - { label: "English", name: "en", widget: "text" }
                   - { label: "Chinese", name: "zh", widget: "text" }
                   - { label: "Japanese", name: "ja", widget: "text" }
-          # ═══ Product Categories ═══
           - label: "Product Categories"
             name: "productCategories"
             widget: "list"
@@ -103,7 +97,6 @@ collections:
                       - { label: "English", name: "en", widget: "text" }
                       - { label: "Chinese", name: "zh", widget: "text" }
                       - { label: "Japanese", name: "ja", widget: "text" }
-          # ═══ Model Gallery ═══
           - label: "Model Gallery (Homepage)"
             name: "modelGallery"
             widget: "list"

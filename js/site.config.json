@@ -104,6 +104,42 @@
         { "img": "img/products/PVC%20patch%20beanie.jpg", "title": { "en": "PVC Patch Beanies", "zh": "PVC贴布针织帽", "ja": "PVCパッチビーニー" }, "desc": { "en": "Warm beanie with PVC patch customization", "zh": "保暖针织帽，可定制PVC贴布", "ja": "PVCパッチカスタマイズ可能な暖かいビーニー" } },
         { "img": "img/products/quick%20drying%20hat.jpg", "title": { "en": "Quick Drying Hat", "zh": "速干帽子", "ja": "速乾ハット" }, "desc": { "en": "Quick-drying performance hat for sports and outdoor activities", "zh": "速干性能帽子，适合运动和户外活动", "ja": "スポーツや屋外活動に最適な速乾パフォーマンスハット" } }
       ]
+    },
+    {
+      "tag": { "en": "Custom Socks", "zh": "定制袜子", "ja": "カスタムソックス" },
+      "title": { "en": "Custom Socks - OEM/ODM Manufacturer", "zh": "定制袜子 | OEM/ODM 制造商", "ja": "カスタムソックス OEM/ODM メーカー" },
+      "items": [
+        { "img": "img/products/socks/custom%20socks.png", "title": { "en": "Custom Socks", "zh": "定制袜子", "ja": "カスタムソックス" }, "desc": { "en": "Fully customizable socks with your logo, pattern and colors — OEM/ODM from 100 pairs", "zh": "全面定制袜子，支持Logo/图案/配色，100双起订", "ja": "ロゴ・柄・カラー対応のフルカスタムソックス、100足から対応" } },
+        { "img": "img/products/socks/crew%20socks.png", "title": { "en": "Crew Socks", "zh": "中筒袜", "ja": "クルーソックス" }, "desc": { "en": "Classic crew-length socks, versatile for everyday wear and brand promotions", "zh": "经典中筒袜，日常穿搭和品牌推广均适用", "ja": "クラシックな丈のクルーソックス、デイリーユースとブランドプロモに最適" } },
+        { "img": "img/products/socks/ankle%20socks.png", "title": { "en": "Ankle Socks", "zh": "船袜", "ja": "アンクルソックス" }, "desc": { "en": "Low-cut ankle socks, lightweight and breathable for warm weather and active use", "zh": "低帮船袜，轻盈透气，适合运动和夏季穿搭", "ja": "ローカットアンクルソックス、軽量で通気性抜群" } },
+        { "img": "img/products/socks/knee%20socks.png", "title": { "en": "Knee High Socks", "zh": "及膝长筒袜", "ja": "ニーハイソックス" }, "desc": { "en": "Stylish knee-high socks for fashion, sports and custom branding", "zh": "时尚及膝长筒袜，适合运动、日常和品牌定制", "ja": "ファッション・スポーツ・ブランドカスタムに対応したニーハイソックス" } },
+        { "img": "img/products/socks/running%20socks.png", "title": { "en": "Running Socks", "zh": "跑步袜", "ja": "ランニングソックス" }, "desc": { "en": "High-performance running socks with moisture-wicking and cushion support", "zh": "高性能跑步袜，排汗速干，缓震支撑", "ja": "吸汗速乾・クッション機能付きの高性能ランニングソックス" } },
+        { "img": "img/products/socks/hiking%20socks.png", "title": { "en": "Hiking Socks", "zh": "登山袜", "ja": "ハイキングソックス" }, "desc": { "en": "Durable hiking socks with extra cushioning and reinforced heel and toe", "zh": "耐用登山袜，加厚缓震，脚跟脚趾双重加固", "ja": "ヒール＆トウ補強の厚底クッション付き耐久ハイキングソックス" } },
+        { "img": "img/products/socks/golf%20socks.png", "title": { "en": "Golf Socks", "zh": "高尔夫袜", "ja": "ゴルフソックス" }, "desc": { "en": "Premium golf socks with arch support and breathable fabric for the course", "zh": "高端高尔夫袜，弓形支撑，透气面料，专为球场设计", "ja": "アーチサポート付きの通気性高いプレミアムゴルフソックス" } },
+        { "img": "img/products/socks/sport%20grip%20socks.png", "title": { "en": "Sport Grip Socks", "zh": "运动防滑袜", "ja": "スポーツグリップソックス" }, "desc": { "en": "Non-slip grip socks for yoga, Pilates, gym and indoor sports", "zh": "防滑运动袜，适合瑜伽、普拉提、健身和室内运动", "ja": "ヨガ・ピラティス・ジム向けノンスリップグリップソックス" } },
+        { "img": "img/products/socks/Non%20slip%20socks%20and%20compression%20socks.png", "title": { "en": "Compression & Anti-Slip Socks", "zh": "压力袜&防滑袜", "ja": "コンプレッションソックス＆滑り止めソックス" }, "desc": { "en": "Medical-grade compression socks and anti-slip socks for safety and performance", "zh": "医用级压力袜和防滑袜，安全舒适兼具性能", "ja": "医療グレードのコンプレッションソックスと滑り止めソックス" } },
+        { "img": "img/products/socks/Anti%20slip%20grip%20socks%20suitable%20for%20indoor%20workout%20gripsocks.png", "title": { "en": "Indoor Workout Grip Socks", "zh": "室内运动防滑袜", "ja": "室内ワークアウトグリップソックス" }, "desc": { "en": "Anti-slip grip socks specially designed for indoor gym and workout sessions", "zh": "专为室内健身设计的防滑抓地袜", "ja": "室内ジムやワークアウト向けの滑り止め専用グリップソックス" } },
+        { "img": "img/products/socks/moisture%20wicking%20socks.png", "title": { "en": "Moisture Wicking Socks", "zh": "排汗速干袜", "ja": "吸湿速乾ソックス" }, "desc": { "en": "Advanced moisture-wicking socks to keep feet dry and comfortable all day", "zh": "高级排汗速干袜，全天保持双脚干爽舒适", "ja": "一日中足をドライで快適に保つ高機能吸湿速乾ソックス" } },
+        { "img": "img/products/socks/cotton%20socks.png", "title": { "en": "Cotton Socks", "zh": "纯棉袜子", "ja": "コットンソックス" }, "desc": { "en": "Soft, breathable 100% cotton socks for everyday comfort", "zh": "柔软透气纯棉袜，舒适日常穿搭首选", "ja": "毎日の快適さのための柔らかく通気性の良い100%コットンソックス" } }
+      ]
+    },
+    {
+      "tag": { "en": "Socks - Fashion & Kids", "zh": "时尚&儿童袜子", "ja": "ファッション＆キッズソックス" },
+      "title": { "en": "Fashion, Kids & Seasonal Socks", "zh": "时尚袜、儿童袜与季节款", "ja": "ファッション・キッズ・シーズナルソックス" },
+      "items": [
+        { "img": "img/products/socks/fuzzy%20socks.png", "title": { "en": "Fuzzy Socks", "zh": "绒毛袜", "ja": "ファジーソックス" }, "desc": { "en": "Super soft and fluffy socks for cozy indoor lounging — great for gifting", "zh": "超柔绒毛袜，居家慵懒首选，也是热门礼品选择", "ja": "室内でのくつろぎに最適な超ソフトでふわふわのソックス、ギフトにも人気" } },
+        { "img": "img/products/socks/custom%20cute%20fuzzy%20socks.png", "title": { "en": "Custom Cute Fuzzy Socks", "zh": "定制可爱绒毛袜", "ja": "カスタムかわいいファジーソックス" }, "desc": { "en": "Adorable custom fuzzy socks with your design, patterns and colors", "zh": "可爱定制绒毛袜，支持自定义图案和配色", "ja": "デザイン・柄・カラーをカスタマイズできるかわいいファジーソックス" } },
+        { "img": "img/products/socks/Sustainable%20Fluffy%20Socks.png", "title": { "en": "Sustainable Fluffy Socks", "zh": "环保绒绒袜", "ja": "サステナブルフラッフィーソックス" }, "desc": { "en": "Eco-friendly fluffy socks made with sustainable materials", "zh": "采用可持续环保材料制成的绒绒袜", "ja": "サステナブル素材を使ったエコフレンドリーなフラッフィーソックス" } },
+        { "img": "img/products/socks/wool%20socks.png", "title": { "en": "Wool Socks", "zh": "羊毛袜", "ja": "ウールソックス" }, "desc": { "en": "Warm and cozy merino wool socks for winter and outdoor activities", "zh": "温暖舒适的羊毛袜，适合冬季和户外活动", "ja": "冬や屋外活動に最適な暖かくて快適なメリノウールソックス" } },
+        { "img": "img/products/socks/winter%20socks.png", "title": { "en": "Winter Socks", "zh": "冬季保暖袜", "ja": "ウィンターソックス" }, "desc": { "en": "Thick and warm winter socks to keep feet toasty in cold weather", "zh": "加厚保暖冬季袜，寒冷天气温暖双脚", "ja": "寒い季節に足を暖かく保つ厚手のウィンターソックス" } },
+        { "img": "img/products/socks/Christmas%20Socks.png", "title": { "en": "Christmas Socks", "zh": "圣诞袜", "ja": "クリスマスソックス" }, "desc": { "en": "Festive Christmas-themed custom socks — perfect for holiday gifting and promotions", "zh": "节日主题圣诞定制袜，节日礼品和促销活动的完美选择", "ja": "ホリデーギフトやプロモーションに最適なフェスティブなクリスマスソックス" } },
+        { "img": "img/products/socks/jacquard%20socks.png", "title": { "en": "Jacquard Pattern Socks", "zh": "提花图案袜", "ja": "ジャカードソックス" }, "desc": { "en": "Premium jacquard weave socks with intricate patterns and high-end look", "zh": "高端提花织造袜，图案精美，品质卓越", "ja": "精巧な柄の高品質ジャカード織りソックス" } },
+        { "img": "img/products/socks/scrunch%20socks.png", "title": { "en": "Scrunch Socks", "zh": "堆堆袜", "ja": "スクランチソックス" }, "desc": { "en": "Trendy scrunch socks in various colors — popular for streetwear and fashion", "zh": "潮流堆堆袜，多色可选，街头风和时尚搭配热门单品", "ja": "ストリートウェアやファッションに人気のトレンディなスクランチソックス" } },
+        { "img": "img/products/socks/Pokemon%20kids%20socks%20crew.png", "title": { "en": "Kids Character Socks", "zh": "儿童卡通袜", "ja": "キッズキャラクターソックス" }, "desc": { "en": "Fun and colorful kids character socks with custom designs", "zh": "有趣多彩的儿童卡通袜，支持定制图案", "ja": "カスタムデザイン対応のカラフルで楽しいキッズキャラクターソックス" } },
+        { "img": "img/products/socks/cotton%20kids%20socks.png", "title": { "en": "Kids Cotton Socks", "zh": "儿童纯棉袜", "ja": "キッズコットンソックス" }, "desc": { "en": "Soft and gentle 100% cotton socks designed for children's sensitive skin", "zh": "柔软亲肤纯棉袜，专为儿童娇嫩肌肤设计", "ja": "お子様の敏感な肌向けに設計されたやわらかいコットンソックス" } },
+        { "img": "img/products/socks/anti%20slip%20socks%20baby.png", "title": { "en": "Baby Anti-Slip Socks", "zh": "婴儿防滑袜", "ja": "ベビー滑り止めソックス" }, "desc": { "en": "Safe and cute anti-slip socks for babies and toddlers learning to walk", "zh": "安全可爱的婴儿防滑袜，适合学步期宝宝", "ja": "歩き始めの赤ちゃんや幼児向けの安全でかわいい滑り止めソックス" } },
+        { "img": "img/products/socks/toe%20socks.png", "title": { "en": "Toe Socks", "zh": "分趾五指袜", "ja": "トーソックス" }, "desc": { "en": "Individual toe socks for better comfort, hygiene and yoga performance", "zh": "分趾五指袜，更舒适卫生，适合瑜伽和日常穿搭", "ja": "快適さ・衛生・ヨガパフォーマンス向上のための個別トーソックス" } }
+      ]
     }
   ],
   "i18n": {
